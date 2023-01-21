@@ -17,7 +17,11 @@ export const Navbar = () => {
 
 
   return (
-    <AppBar position="sticky" elevation={0}>
+    <AppBar 
+    position="sticky"
+     elevation={0}
+     className="blur"
+     >
       {
         hasWindow && (
 
@@ -31,7 +35,7 @@ export const Navbar = () => {
               </IconButton>
               <NextLink legacyBehavior href="/" passHref >
                 <Link underline='none' color="white">
-                  <Typography variant="h6"> OpenJira</Typography>
+                  <Typography variant="h6">App Jira</Typography>
                 </Link>
               </NextLink>
           </Toolbar>
